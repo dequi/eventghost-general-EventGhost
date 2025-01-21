@@ -21,7 +21,8 @@ This script creates the EventGhost setup installer.
 """
 
 from os.path import dirname, exists, join
-
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 # Local imports
 import builder
 from builder.Utils import CaseInsensitiveList, ListDir
